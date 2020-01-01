@@ -1,0 +1,30 @@
+.mouse-body {
+	position: relative;
+	background-color: #d8d7da;
+	text-align: left;
+	margin: 100px;
+}
+.mouse-body:before,
+.mouse-body:after {
+	content: "";
+	position: absolute;
+	background-color: inherit;
+}
+.mouse-body,
+.mouse-body:before,
+.mouse-body:after {
+	width: 10em;
+	height: 10em;
+	border-top-right-radius: 60%;
+}
+
+.mouse-body {
+	transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+}
+.mouse-body:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707)
+		translate(0, -50%);
+}
+.mouse-body:after {
+	transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+}
