@@ -17,7 +17,7 @@
 }
 .mouse-ear:before {
 	transform: rotate(-45deg) skewX(-30deg) scale(1, 0.866);
-	left: 14em;
+	left: 13.9em;
 }
 .mouse-ear:after {
 	left: 4em;
@@ -135,17 +135,86 @@
 	position: absolute;
 	content: "";
 	background-color: black;
+	top: 12px;
 	width: 50px;
 	height: 2px;
 }
 
 .mouse-mouth:before {
-	top: 12px;
 	left: 5px;
 	transform: rotate(-30deg);
 }
 .mouse-mouth:after {
-	top: 12px;
 	left: -4px;
 	transform: rotate(30deg);
+}
+
+.mouse-beard-l {
+	position: relative;
+	background-color: black;
+	width: 35px;
+	height: 2px;
+	top: -25px;
+	left: 90px;
+	transform: rotate(5deg);
+}
+
+.mouse-beard-l:before,
+.mouse-beard-l:after {
+	position: absolute;
+	content: "";
+	background-color: black;
+	width: 35px;
+	height: 2px;
+}
+
+.mouse-beard-l:before {
+	top: 15px;
+	left: 3px;
+	width: 30px;
+	transform: rotate(-5deg);
+}
+.mouse-beard-l:after {
+	top: 30px;
+	transform: rotate(-10deg);
+}
+
+.mouse-beard-r {
+	position: relative;
+	background-color: black;
+	width: 35px;
+	height: 2px;
+	top: -25px;
+	left: 220px;
+	transform: rotate(-5deg);
+}
+
+.mouse-beard-r:before,
+.mouse-beard-r:after {
+	position: absolute;
+	content: "";
+	background-color: black;
+	width: 35px;
+	height: 2px;
+}
+
+.mouse-beard-r:before {
+	top: 15px;
+	left: 3px;
+	width: 30px;
+	transform: rotate(5deg);
+}
+.mouse-beard-r:after {
+	top: 30px;
+	transform: rotate(10deg);
+}
+
+.mouse-mole {
+	position: relative;
+	top: 10px;
+	left: 200px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: black;
 }
