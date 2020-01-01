@@ -4,8 +4,8 @@
 .mouse-ear:before,
 .mouse-ear:after {
 	position: absolute;
-	background-color: inherit;
 	background-color: #d8d7da;
+	top: 30px;
 }
 .mouse-ear,
 .mouse-ear:before,
@@ -16,12 +16,10 @@
 	border-radius: 45%;
 }
 .mouse-ear:before {
-	top: 0.1em;
 	transform: rotate(-45deg) skewX(-30deg) scale(1, 0.866);
 	left: 14em;
 }
 .mouse-ear:after {
-	top: 0;
 	left: 4em;
 	transform: rotate(50deg) skewX(-30deg) scale(1, 0.866);
 }
@@ -29,7 +27,7 @@
 	position: relative;
 	background-color: #d8d7da;
 	text-align: left;
-	margin: 100px;
+	margin-left: 100px;
 }
 .mouse-body:before,
 .mouse-body:after {
@@ -54,4 +52,100 @@
 }
 .mouse-body:after {
 	transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+}
+
+.mouse-eyebrows {
+	position: relative;
+	z-index: 9999;
+}
+.mouse-eyebrows:before,
+.mouse-eyebrows:after {
+	position: absolute;
+	background-color: black;
+	content: "";
+	top: -100px;
+	width: 30px;
+	height: 5px;
+	border-radius: 30%;
+}
+
+.mouse-eyebrows:before {
+	left: 130px;
+}
+.mouse-eyebrows:after {
+	left: 190px;
+}
+
+.mouse-eye-l {
+	position: relative;
+}
+.mouse-eye-l:before,
+.mouse-eye-l:after {
+	position: absolute;
+	content: "";
+	width: 40px;
+	height: 40px;
+	left: 125px;
+	border-radius: 50%;
+}
+
+.mouse-eye-l:before {
+	top: -90px;
+	background-color: #d8d7da;
+	z-index: 100;
+}
+.mouse-eye-l:after {
+	top: -70px;
+	background-color: black;
+}
+.mouse-eye-r {
+	position: relative;
+}
+.mouse-eye-r:before,
+.mouse-eye-r:after {
+	position: absolute;
+	content: "";
+	left: 190px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.mouse-eye-r:before {
+	top: -90px;
+	background-color: #d8d7da;
+	z-index: 100;
+}
+.mouse-eye-r:after {
+	top: -70px;
+	background-color: black;
+}
+
+.mouse-mouth {
+	position: relative;
+	background-color: black;
+	width: 50px;
+	height: 2px;
+	top: -20px;
+	left: 150px;
+}
+
+.mouse-mouth:before,
+.mouse-mouth:after {
+	position: absolute;
+	content: "";
+	background-color: black;
+	width: 50px;
+	height: 2px;
+}
+
+.mouse-mouth:before {
+	top: 12px;
+	left: 5px;
+	transform: rotate(-30deg);
+}
+.mouse-mouth:after {
+	top: 12px;
+	left: -4px;
+	transform: rotate(30deg);
 }
