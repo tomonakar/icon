@@ -1,3 +1,30 @@
+.mouse-ear {
+	position: relative;
+}
+.mouse-ear:before,
+.mouse-ear:after {
+	position: absolute;
+	background-color: inherit;
+	background-color: #d8d7da;
+}
+.mouse-ear,
+.mouse-ear:before,
+.mouse-ear:after {
+	content: "";
+	width: 4.5em;
+	height: 2.5em;
+	border-radius: 45%;
+}
+.mouse-ear:before {
+	top: 0.1em;
+	transform: rotate(-45deg) skewX(-30deg) scale(1, 0.866);
+	left: 14em;
+}
+.mouse-ear:after {
+	top: 0;
+	left: 4em;
+	transform: rotate(50deg) skewX(-30deg) scale(1, 0.866);
+}
 .mouse-body {
 	position: relative;
 	background-color: #d8d7da;
